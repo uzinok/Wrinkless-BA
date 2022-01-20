@@ -7,6 +7,7 @@ body::before {
 	right: 0;
 	bottom: 0;
 	left: 0;
+	width: 100%;
 
 	// отменяем взаимодействие с сеткой
 	pointer-events: none;
@@ -14,7 +15,7 @@ body::before {
 	background-repeat: no-repeat;
 
 	// от края контента до первой колоки
-	--grid-sides: 16px;
+	--grid-sides: 10px;
 	// расстояние между колонками
 	--grid-gutter: 16px;
 	// количество колонок
@@ -40,8 +41,13 @@ body::before {
 @media (min-width: 768px) {
 	body::before {
 		// от края контента до первой колоки
-		--grid-sides: 24px;
+		--grid-sides: 15px;
 		// количество колонок
-		--grid-colums: 8;
+		--grid-colums: 12;
+
+		max-width: 1170px;
+		left: 50%;
+		transform: translateX(-50%);
+		box-sizing: border-box;
 	}
 }

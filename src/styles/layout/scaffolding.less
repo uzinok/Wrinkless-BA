@@ -1,8 +1,7 @@
 body {
 	margin: 0;
-	padding: 0;
-
-	background-image: url(../../img/2.jpg);
+	font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+	background-color: #f4f4f4;
 }
 
 img {
@@ -13,8 +12,44 @@ img {
 	position: absolute;
 	width: 0;
 	height: 0;
-	margin: 0;
 	padding: 0;
 	overflow: hidden;
 	border: none;
+}
+
+[class*='container'] {
+	box-sizing: border-box;
+	max-width: @max-xl;
+	margin: 0 auto;
+}
+
+@media (max-width: @max-lg) {
+	.hidde-max-lg {
+		display: none;
+	}
+}
+
+@media (min-width: @min-lg) {
+	.hidde-min-lg {
+		display: none;
+	}
+}
+
+section {
+	background-color: #fff;
+}
+
+.left-content {
+	max-width: 863px;
+	padding-top: 7px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.bold {
+	font-weight: 700;
 }

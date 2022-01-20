@@ -6,24 +6,129 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
 	<link rel="stylesheet" href="styles/main.min.css">
 </head>
 
 <body>
-	<div style="display: none;">
-		{% include 'img/sprite.svg' %}
-	</div>
 
-	<svg width="20" height="20" class="main-nav__ico">
-		<use xlink:href="#icon-geo"></use>
-	</svg>
+	<!-- header -->
+	<header class="header">
+		<!-- header__container -->
+		<div class="header__container header__container--top">
 
-	Далеко-далеко за словесными горами в стране, гласных и согласных живут
-	рыбные тексты. Парадигматическая переулка дал ведущими его семантика продолжил мир точках свой!
-	<img src="./img/1.jpg" alt="">
-	<script src="scripts/main.min.js"></script>
+			<!-- header__logo -->
+			<a href="#" class="header__logo">
+				<span class="header__logo-name">
+					<span>BEAUTY</span> <span>INSIDER</span>
+				</span>
+				<span class="header__logo-title">НЕЗАВИСИМЫЙ РЕСУРС О КРАСОТЕ</span>
+			</a>
+			<!-- /header__logo -->
+
+			<hr class="hidde-min-lg">
+
+			<!-- header__info -->
+			<div class="header__info">
+
+				<picture>
+					<source media="(min-width: 863px)" srcset="img/header__img.jpg">
+
+					<img src="img/header__img-mob.jpg" alt="" class="">
+				</picture>
+
+				<div class="header__info-text">
+					<div class="header__info-text-title">Самая популярная статья на сайте</div>
+					<div class="header__info-text-subtitle">Как разгладить морщины, убрать пигментацию<span class="hidde-min-lg">...</span> <span class="hidde-max-lg">и не разориться на косметике? Beauty Insider делится лайфхаком</span> </div>
+				</div>
+			</div>
+			<!-- /header__info -->
+
+			<!-- header__soc -->
+			<div class="header__soc">
+				<span class="header__soc-title">Мы в соцсетях</span>
+
+				<ul class="header__soc-list">
+					<li class="header__soc-item"><a href="#" class="header__soc-link soc-link soc-link--twiter"><span class="visually-hidden">twiter</span></a></li>
+					<li class="header__soc-item"><a href="#" class="header__soc-link soc-link soc-link--pinterest"><span class="visually-hidden">pinterest</span></a></li>
+					<li class="header__soc-item"><a href="#" class="header__soc-link soc-link soc-link--instagram"><span class="visually-hidden">instagram</span></a></li>
+					<li class="header__soc-item"><a href="#" class="header__soc-link soc-link soc-link--facebook"><span class="visually-hidden">facebook</span></a></li>
+				</ul>
+			</div>
+			<!-- /header__soc -->
+
+			<div class="header__nav-toggle"></div>
+
+		</div>
+		<!-- /header__container -->
+
+		<hr class="hidde-max-lg">
+
+		<!-- header__container -->
+		<nav class="header__container header__nav">
+			<ul class="header__nav-list">
+				<li class="header__nav-item"><a href="#" class="header__nav-link">ПРОФ. КОСМЕТИКА</a></li>
+				<li class="header__nav-item"><a href="#" class="header__nav-link">ПАРФЮМЕРИЯ</a></li>
+				<li class="header__nav-item"><a href="#" class="header__nav-link">ВОЛОСЫ</a></li>
+				<li class="header__nav-item"><a href="#" class="header__nav-link active">ЛИЦО</a></li>
+				<li class="header__nav-item"><a href="#" class="header__nav-link">ТЕЛО</a></li>
+				<li class="header__nav-item"><a href="#" class="header__nav-link">МАКИЯЖ</a></li>
+				<li class="header__nav-item"><a href="#" class="header__nav-link">АКСЕССУАРЫ</a></li>
+				<li class="header__nav-item"><a href="#" class="header__nav-link">Мода</a></li>
+			</ul>
+		</nav>
+		<!-- /header__container -->
+	</header>
+	<!-- /header -->
+
+	<main>
+		<!-- breadcrumbs -->
+		<div class="container">
+			<p class="breadcrumbs">
+				<span aria-hidden="true">Все статьи</span>
+				<span aria-hidden="true">Лицо</span>
+				<span aria-hidden="true">Уход за кожей</span>
+				<span aria-hidden="true">Anti-age</span>
+				<a href="#"> Wrinkless - лучшая альтернатива существующим лифтинг процедурам!</a>
+			</p>
+		</div>
+		<!-- /breadcrumbs -->
+
+		<!-- container--content -->
+		<div class="container container--content">
+			<section class="section-container left-content">
+				<!-- section__header -->
+				<header class="section__header">
+					<ul class="tag-list">
+						<li class="tag-item"><a href="#" class="tag-link">Красота</a></li>
+						<li class="tag-item"><a href="#" class="tag-link">Морщины</a></li>
+						<li class="tag-item"><a href="#" class="tag-link">Wrinkless</a></li>
+					</ul>
+					<ul class="info-list">
+						<li class="info-item"><a href="#" class="info-link info-link--heart">376</a></li>
+						<li class="info-item"><a href="#" class="info-link info-link--massage">16</a></li>
+						<li class="info-item"><a href="#" class="info-link info-link--read">7 Min Read</a></li>
+					</ul>
+				</header>
+				<!-- section__header -->
+				<h1>Как разгладить морщины, убрать пигментацию и не разориться на косметике? Beauty Insider делится лайфхаком</h1>
+
+				<p>Хотите избавиться от морщин и без Instagram-фильтров выглядеть сногсшибательно? Тогда читайте далее.</p>
+
+				<div class="text-center">
+					<figure class="aqua-block">
+						<img src="./img/1.jpg" alt="#">
+
+						<figcaption class="aqua-logo"><span>BEAUTY</span> <span>INSIDER</span></figcaption>
+					</figure>
+				</div>
+
+				<p class="bold">В борьбе за красоту и молодость все средства хороши. Мы устроили тест-драйв самого обсуждаемого бьюти-бестселлера 2020 - лифтинг-сыворотки Wrinkless. И вот что из этого вышло:</p>
+			</section>
+		</div>
+		<!-- /container--content -->
+	</main>
+
 </body>
 
 </html>
