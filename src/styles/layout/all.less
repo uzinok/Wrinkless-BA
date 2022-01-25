@@ -247,6 +247,20 @@ main section p {
 	&--white {
 		color: #fff;
 	}
+
+	&--aqua-center {
+		right: 54%;
+		top: 20px;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 700;
+		color: rgba(#fff, 65%);
+		letter-spacing: -0.07em;
+
+		& span:last-child {
+			font-weight: 500;
+		}
+	}
 }
 
 .blockquotes {
@@ -378,5 +392,11 @@ main section p {
 	.flex-desktop {
 		display: flex;
 		justify-content: space-between;
+	}
+}
+
+@media (min-width: @min-xl) {
+	.right-content__block {
+		background-color: #fff;
 	}
 }

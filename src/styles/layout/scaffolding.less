@@ -35,6 +35,10 @@ img {
 	}
 }
 
+main {
+	padding-bottom: 70px;
+}
+
 section {
 	background-color: #fff;
 }
@@ -115,5 +119,21 @@ section {
 	& img {
 		margin-right: 5px;
 		margin-bottom: 5px;
+	}
+}
+
+.right-content {
+	display: none;
+}
+
+@media (min-width: @min-xl) {
+	.right-content {
+		display: inline-block;
+		width: 292px;
+		margin-left: 15px;
+	}
+
+	.left-content {
+		float: left;
 	}
 }
